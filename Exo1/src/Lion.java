@@ -4,9 +4,8 @@
 public class Lion extends Animal {
 
     public Lion(String name, Integer weight) {
-        super(name, weight);
+        super(name, weight, new Regime("viande", 10));
     }
-
 
     @Override
     public void crier() {
@@ -21,4 +20,8 @@ public class Lion extends Animal {
                 '}';
     }
 
+    @Override
+    public double getCout() {
+        return super.getWeight()*super.getCout();
+    }
 }

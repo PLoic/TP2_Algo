@@ -5,11 +5,12 @@ public class Animal {
 
     private String name;
     private Integer weight;
+    private  Regime regime;
 
-
-    public Animal(String name, Integer weight) {
+    public Animal(String name, Integer weight, Regime regime) {
         this.name = name;
         this.weight = weight;
+        this.regime = regime;
     }
 
     @Override
@@ -18,6 +19,10 @@ public class Animal {
                 "name='" + name + '\'' +
                 ", weight=" + weight +
                 '}';
+    }
+
+    public double getCout(){
+        return regime.getPricePerKg();
     }
 
     public void crier(){

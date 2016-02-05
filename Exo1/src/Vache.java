@@ -6,10 +6,9 @@ public class Vache extends Animal {
     private Integer nbSpots;
 
     public Vache(String name, Integer weight, Integer nbSpots) {
-        super(name, weight);
+        super(name, weight, new Regime("herbe", 2));
         this.nbSpots = nbSpots;
     }
-
 
     @Override
     public void crier() {
@@ -28,5 +27,10 @@ public class Vache extends Animal {
 
     public Integer getNbSpots() {
         return nbSpots;
+    }
+
+    @Override
+    public double getCout() {
+        return super.getWeight()*super.getCout();
     }
 }
