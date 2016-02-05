@@ -24,4 +24,8 @@ public class Canard extends Animal {
                 "color='" + color + '\'' +
                 '}';
     }
+
+    public String getColor() {
+        return color;
+    }
 }

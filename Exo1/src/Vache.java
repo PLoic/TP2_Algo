@@ -26,5 +26,7 @@ public class Vache extends Animal {
                 '}';
     }
 
-
+    public Integer getNbSpots() {
+        return nbSpots;
+    }
 }
