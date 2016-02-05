@@ -6,9 +6,10 @@ public class Canard extends Animal {
     private String color;
 
     public Canard(String name, Integer weight, String color) {
-        super(name, weight);
+        super(name, weight, new Regime("grains",3));
         this.color = color;
     }
+
 
     @Override
     public void crier() {
