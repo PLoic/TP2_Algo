@@ -17,7 +17,7 @@ public class TestHeritage {
         unAnimal = new Lion("Leo", 332);
         Lion leo = (Lion) unAnimal;
 
-        unAnimal = new Animal("Leo", 332);
+        unAnimal = new Animal("Leo", 332, new Regime("test", 20));
         //leo = (Lion) unAnimal;
     
     }
