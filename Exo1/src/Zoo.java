@@ -1,30 +1,30 @@
 import java.util.LinkedList;
 
-class Zoo {
+public class Zoo {
 
-    private String nom;
-    private LinkedList<Animal> animaux;
+    private String name;
+    private LinkedList<Animal> animals;
 
     public Zoo (String nom) {
-        this.nom = nom;
-        animaux = new LinkedList<Animal>();
+        this.name = nom;
+        this.animals = new LinkedList<Animal>();
     }
 
     public int getNbAnimaux () {
-        return animaux.size();
+        return animals.size();
     }
 
     public void ajouterAnimal (Animal animal) {
-        animaux.add(animal);
+        animals.add(animal);
     }
 
     public void crier() {
-        for (Animal a : animaux) {
+        for (Animal a : animals) {
             a.crier();
         }
     }
 
     public String toString() {
-        return "Zoo " + nom + " contient : " + animaux;
+        return "Zoo " + name + " contient : " + animals;
     }
 }
