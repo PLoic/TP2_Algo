@@ -27,4 +27,12 @@ public class Zoo {
     public String toString() {
         return "Zoo " + name + " contient : " + animals;
     }
+
+    public double getCoutGlobal() {
+        double somme = 0;
+        for (Animal a : animals) {
+            somme += a.getCout();
+        }
+        return somme;
+    }
 }

@@ -9,6 +9,10 @@ public class Main {
         zoo.ajouterAnimal(new Animal("Sylvain", 10));
         zoo.crier();
     }
+
+    public static void getCoutGlobal(Zoo zoo) {
+        zoo.getCoutGlobal();
+    }
     
     public static void main (String[] args) {
         Zoo Ensimag = new Zoo("Ensimag");
